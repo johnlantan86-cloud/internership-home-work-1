@@ -11,21 +11,21 @@
          <div >
             <h3 class="text-yellow-300 font-bold text-lg mb-3">Quick Links</h3>
             <ul class="space-y-2 text-sm">
-                <li><RouterLink to="/Home" class="text-green-200 hover:text-yellow-300">Home</RouterLink></li>
-                <li><RouterLink to="/About" class="text-green-200 hover:text-yellow-300">About</RouterLink></li>
-                <li><RouterLink to="/Contact" class="text-green-200 hover:text-yellow-300">Contact</RouterLink></li>
-                <li><RouterLink to="/Services" class="text-green-200 hover:text-yellow-300">Services</RouterLink></li>
+                <li><RouterLink to="/" class="text-green-200 hover:text-yellow-300">Home</RouterLink></li>
+                <li><RouterLink to="/about" class="text-green-200 hover:text-yellow-300">About</RouterLink></li>
+                <li><RouterLink to="/contact" class="text-green-200 hover:text-yellow-300">Contact</RouterLink></li>
+                <li><RouterLink to="/services" class="text-green-200 hover:text-yellow-300">Services</RouterLink></li>
             </ul>
          </div>
          <!--destninations-->
          <div>
             <h3 class="text-yellow-300 font-bold text-lg mb-3">Destinations</h3>
             <ul class="text-sm space-y-2">
-                <li><RouterLink to="/Kigali" class="text-green-200 hover:text-yellow-300">Kigali</RouterLink></li>
-                <li><RouterLink to="/NP" class="text-green-200 hover:text-yellow-300">Nothern Province</RouterLink></li>
-                <li><RouterLink to="/SP" class="text-green-200 hover:text-yellow-300">Southern Province</RouterLink></li>
-                <li><RouterLink to="/EP" class="text-green-200 hover:text-yellow-300">Eastern Province</RouterLink></li>
-                <li><RouterLink to="/WP" class="text-green-200 hover:text-yellow-300">Western Province</RouterLink></li>
+                <li><RouterLink to="/kigali" class="text-green-200 hover:text-yellow-300">Kigali</RouterLink></li>
+                <li><RouterLink to="/np" class="text-green-200 hover:text-yellow-300">Northern Province</RouterLink></li>
+                <li><RouterLink to="/sp" class="text-green-200 hover:text-yellow-300">Southern Province</RouterLink></li>
+                <li><RouterLink to="/ep" class="text-green-200 hover:text-yellow-300">Eastern Province</RouterLink></li>
+                <li><RouterLink to="/wp" class="text-green-200 hover:text-yellow-300">Western Province</RouterLink></li>
 
             </ul>
          </div>

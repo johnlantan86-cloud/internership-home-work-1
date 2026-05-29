@@ -1,67 +1,67 @@
 
 
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
-import Contact from '../views/Contact.vue';
-import Services from '../views/Services.vue';
-import EP from '../views/EP.vue';
-import NP from '../views/NP.vue';
-import SP from '../views/SP.vue';
-import WP from '../views/WP.vue';
-import Kigali from '../views/Kigali.vue';
-import Gallery from '../views/Gallery.vue';
+import Home from '../views/home.vue';
+import About from '../views/about.vue';
+import Contact from '../views/contact.vue';
+import Services from '../views/services.vue';
+import EP from '../views/ep.vue';
+import NP from '../views/np.vue';
+import SP from '../views/sp.vue';
+import WP from '../views/wp.vue';
+import Kigali from '../views/kigali.vue';
+import Gallery from '../views/gallery.vue';
 
 const routes = [
   {
-    path: '/Home',
+    path: '/',
     name: 'home',
     component: Home,
   },
 
   {
-    path: '/About',
+    path: '/about',
     name: 'about',
     component: About,
   },
   {
-    path: '/Contact',
+    path: '/contact',
     name: 'contact',
     component: Contact,
   },
   {
-    path: '/Services',
+    path: '/services',
     name: 'services',
     component: Services,
   },
 
   {
-    path: '/EP',
+    path: '/ep',
     name: 'EP',
     component: EP,
   },
   {
-    path: '/NP',
+    path: '/np',
     name: 'NP',
     component: NP,
   },
   {
-    path: '/SP',
+    path: '/sp',
     name: 'SP',
     component: SP,
   },
   {
-    path: '/WP',
+    path: '/wp',
     name: 'WP',
     component: WP,
   },
   {
-    path: '/Kigali',
+    path: '/kigali',
     name: 'Kigali',
     component: Kigali,
   },
   {
-    path: '/Gallery',
+    path: '/gallery',
     name: 'Gallery',
     component: Gallery,
   }
