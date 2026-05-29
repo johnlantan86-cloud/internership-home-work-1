@@ -5,11 +5,11 @@ import Home from '../views/home.vue';
 import About from '../views/about.vue';
 import Contact from '../views/contact.vue';
 import Services from '../views/services.vue';
-import EP from '../views/ep-temp.vue';
-import NP from '../views/np-temp.vue';
+import EP from '../views/ep.vue';
+import NP from '../views/np.vue';
 import SP from '../views/sp.vue';
 import WP from '../views/wp.vue';
-import Kigali from '../views/kigali-temp.vue';
+import Kigali from '../views/kigali.vue';
 import Gallery from '../views/gallery.vue';
 
 const routes = [

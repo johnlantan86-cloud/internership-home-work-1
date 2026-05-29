@@ -60,7 +60,7 @@ onMounted(() => {
 
 <template>
   <section
-    class="relative h-screen bg-cover bg-center flex items-center text-white duration-700"
+    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white duration-700"
     :style="{ backgroundImage: `url(${currentPlace.image})` }"
   >
     <!-- DARK OVERLAY -->
@@ -68,70 +68,62 @@ onMounted(() => {
 
     <!-- CONTENT -->
     <div
-      class="relative z-10 w-full px-10 flex flex-col lg:flex-row items-center justify-between"
+      class="relative z-10 w-full h-full flex flex-col justify-center items-center text-center px-6"
     >
-      <!-- LEFT -->
-      <div class="max-w-2xl">
-        <p class="uppercase tracking-[6px] text-cyan-400 mb-4">
+      <div class="max-w-4xl mx-auto flex flex-col items-center">
+        
+        <p class="uppercase tracking-[8px] text-cyan-400 mb-6 text-sm md:text-base">
           Explore Rwanda
         </p>
 
-        <h1 class="text-6xl font-extrabold mb-6">
+        <h1
+          class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight"
+        >
           {{ currentPlace.name }}
         </h1>
 
-        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+        <p
+          class="text-lg md:text-2xl text-gray-300 leading-relaxed mb-10 max-w-2xl"
+        >
           {{ currentPlace.description }}
         </p>
 
-        <div class="flex gap-4">
+        <!-- BUTTONS -->
+        <div class="flex flex-wrap justify-center gap-5">
+          
           <button
-            class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-full duration-300"
+            class="bg-cyan-500 hover:bg-cyan-600 px-8 py-4 rounded-full duration-300 text-lg font-semibold"
           >
             Explore
           </button>
 
           <button
-            class="border border-white hover:bg-white hover:text-black px-6 py-3 rounded-full duration-300"
+            class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-full duration-300 text-lg font-semibold"
           >
             Learn More
           </button>
+
         </div>
       </div>
+    </div>
 
-      <!-- RIGHT CARD -->
-      <div
-        class="hidden lg:block bg-white/10 backdrop-blur-lg p-6 rounded-3xl w-[320px] border border-white/20"
+    <!-- SLIDER CONTROLS -->
+    <div
+      class="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-4 z-10"
+    >
+      <button
+        @click="previousPlace"
+        class="bg-white/20 hover:bg-white/30 px-5 py-2 rounded-full backdrop-blur-md"
       >
-        <img
-          :src="currentPlace.image"
-          class="w-full h-56 object-cover rounded-2xl mb-4"
-        />
+        Prev
+      </button>
 
-        <h2 class="text-2xl font-bold mb-2">
-          {{ currentPlace.name }}
-        </h2>
-
-        <p class="text-gray-300 mb-6">
-          {{ currentPlace.country }}
-        </p>
-
-        <div class="flex justify-between">
-          <button
-            @click="previousPlace"
-            class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full"
-          >
-            Prev
-          </button>
-
-          <button
-            @click="nextPlace"
-            class="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-full"
-          >
-            Next
-          </button>
-        </div>
-      </div>
+      <button
+        @click="nextPlace"
+        class="bg-cyan-500 hover:bg-cyan-600 px-5 py-2 rounded-full"
+      >
+        Next
+      </button>
     </div>
 
     <!-- INDICATORS -->
