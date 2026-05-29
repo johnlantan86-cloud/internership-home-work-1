@@ -11,10 +11,10 @@
          <div >
             <h3 class="text-yellow-300 font-bold text-lg mb-3">Quick Links</h3>
             <ul class="space-y-2 text-sm">
-                <li><RouterLink to="/" class="text-green-200 hover:text-yellow-300">Home</RouterLink></li>
-                <li><RouterLink to="/about" class="text-green-200 hover:text-yellow-300">About</RouterLink></li>
-                <li><RouterLink to="/contact" class="text-green-200 hover:text-yellow-300">Contact</RouterLink></li>
-                <li><RouterLink to="/services" class="text-green-200 hover:text-yellow-300">Services</RouterLink></li>
+                <li><RouterLink to="/Home" class="text-green-200 hover:text-yellow-300">Home</RouterLink></li>
+                <li><RouterLink to="/About" class="text-green-200 hover:text-yellow-300">About</RouterLink></li>
+                <li><RouterLink to="/Contact" class="text-green-200 hover:text-yellow-300">Contact</RouterLink></li>
+                <li><RouterLink to="/Services" class="text-green-200 hover:text-yellow-300">Services</RouterLink></li>
             </ul>
          </div>
          <!--destninations-->

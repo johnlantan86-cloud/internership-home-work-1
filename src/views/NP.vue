@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>northern province</h1>
-        <p>This is the northern province page content.</p>
+        <h1>Kigali</h1>
+        <p>This is the Kigali page content.</p>
     </div>
 </template>

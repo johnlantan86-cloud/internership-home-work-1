@@ -1,36 +1,36 @@
 
 
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/home.vue';
-import About from '../views/about.vue';
-import Contact from '../views/contact.vue';
+import Home from '../views/Home.vue';
+import About from '../views/About.vue';
+import Contact from '../views/Contact.vue';
 import Services from '../views/services.vue';
 import EP from '../views/EP.vue';
 import NP from '../views/NP.vue';
-import SP from '../views/sp.vue';
-import WP from '../views/wp.vue';
+import SP from '../views/SP.vue';
+import WP from '../views/WP.vue';
 import Kigali from '../views/Kigali.vue';
-import Gallery from '../views/gallery.vue';
+import Gallery from '../views/Gallery.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/Home',
     name: 'home',
     component: Home,
   },
 
   {
-    path: '/about',
+    path: '/About',
     name: 'about',
     component: About,
   },
   {
-    path: '/contact',
+    path: '/Contact',
     name: 'contact',
     component: Contact,
   },
   {
-    path: '/services',
+    path: '/Services',
     name: 'services',
     component: Services,
   },
